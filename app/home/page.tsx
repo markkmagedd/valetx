@@ -25,10 +25,7 @@ export default function HomePage() {
           <ActionCard
             icon={<CarKeyIcon />}
             title="My Car"
-            onClick={() => {
-              // Navigate to car details (not implemented in this phase)
-              console.log("My Car clicked");
-            }}
+            onClick={() => router.push("/my-car")}
           />
           <ActionCard
             icon={<BellIcon />}
