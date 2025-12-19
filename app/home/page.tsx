@@ -38,7 +38,7 @@ export default function HomePage() {
           />
         </div>
 
-        {/* Request Valet Button */}
+        {/* Upcoming Features Button */}
         <div
           className="flex-1 flex items-end pb-8 animate-fadeIn"
           style={{ animationDelay: "0.2s" }}
@@ -46,10 +46,12 @@ export default function HomePage() {
           <Button
             variant="primary"
             size="lg"
-            onClick={() => router.push("/searching")}
-            className="w-full bg-navy-dark hover:bg-navy text-white"
+            onClick={() => {
+              // Placeholder for upcoming features
+            }}
+            className="w-full bg-navy-dark hover:bg-navy text-white opacity-60 cursor-not-allowed"
           >
-            Request Valet
+            Upcoming Features
           </Button>
         </div>
       </div>
