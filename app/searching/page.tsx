@@ -47,8 +47,50 @@ export default function SearchingPage() {
           />
 
           {/* Center content */}
-          <div className="relative z-10 bg-white rounded-3xl p-8 shadow-2xl">
-            <ValetServiceIcon className="w-24 h-24" />
+          <div className="relative z-10 bg-yellow-500 rounded-full p-8 shadow-2xl">
+            <svg
+              className="w-16 h-16"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              {/* Car body */}
+              <path
+                d="M10 32 L16 20 L48 20 L54 32 L54 44 L10 44 Z"
+                fill="#0f1c2e"
+                stroke="#0f1c2e"
+                strokeWidth="2"
+              />
+              {/* Car roof */}
+              <path
+                d="M20 20 L22 12 L42 12 L44 20"
+                fill="#0f1c2e"
+                stroke="#0f1c2e"
+                strokeWidth="2"
+              />
+              {/* Windows */}
+              <rect
+                x="24"
+                y="14"
+                width="7"
+                height="6"
+                fill="white"
+                opacity="0.3"
+              />
+              <rect
+                x="33"
+                y="14"
+                width="7"
+                height="6"
+                fill="white"
+                opacity="0.3"
+              />
+              {/* Wheels */}
+              <circle cx="20" cy="44" r="5" fill="#0f1c2e" />
+              <circle cx="20" cy="44" r="3" fill="#666" />
+              <circle cx="44" cy="44" r="5" fill="#0f1c2e" />
+              <circle cx="44" cy="44" r="3" fill="#666" />
+            </svg>
           </div>
         </div>
 
