@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import MapView from "@/components/MapView";
 import ActionCard from "@/components/ActionCard";
 import Button from "@/components/Button";
-import { CarKeyIcon, BellIcon } from "@/components/Icons";
+import { CarKeyIcon, BellIcon, CarWashIcon } from "@/components/Icons";
 
 export default function HomePage() {
   const router = useRouter();
@@ -33,22 +33,22 @@ export default function HomePage() {
             onClick={() => router.push("/searching")}
             variant="yellow"
           />
+          <div className="col-span-2 flex justify-center">
+            <div className="w-[calc(50%-8px)]">
+              <ActionCard
+                icon={<CarWashIcon />}
+                title="Car Wash"
+                onClick={() => router.push("/car-wash")}
+              />
+            </div>
+          </div>
         </div>
 
-        {/* Actions & Upcoming Features */}
+        {/* Upcoming Features Button */}
         <div
-          className="flex-1 flex flex-col justify-end space-y-4 pb-8 animate-fadeIn"
+          className="flex-1 flex items-end pb-8 animate-fadeIn"
           style={{ animationDelay: "0.2s" }}
         >
-          <Button
-            variant="primary"
-            size="lg"
-            onClick={() => router.push("/car-wash")}
-            className="w-full bg-yellow-500 hover:bg-yellow-600 text-navy-dark"
-          >
-            Request Car Wash
-          </Button>
-
           <Button
             variant="primary"
             size="lg"
