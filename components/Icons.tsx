@@ -112,3 +112,42 @@ export function ValetServiceIcon({
     </svg>
   );
 }
+
+export function CarWashIcon({
+  className = "w-12 h-12",
+}: {
+  className?: string;
+}) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {/* Car Outline */}
+      <path
+        d="M8 28V36H12V34H36V36H40V28M6 28H42L38 20H10L6 28Z"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* Water Drops / Bubbles */}
+      <circle cx="16" cy="12" r="2" fill="currentColor" />
+      <circle cx="24" cy="8" r="3" fill="currentColor" />
+      <circle cx="32" cy="14" r="2.5" fill="currentColor" />
+      <circle cx="20" cy="16" r="1.5" fill="currentColor" />
+      {/* Sparkles */}
+      <path
+        d="M38 8L39 11L42 12L39 13L38 16L37 13L34 12L37 11L38 8Z"
+        fill="#FDB913"
+      />
+      <path
+        d="M10 14L11 16L13 17L11 18L10 20L9 18L7 17L9 16L10 14Z"
+        fill="#FDB913"
+      />
+    </svg>
+  );
+}
+

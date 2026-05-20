@@ -35,11 +35,20 @@ export default function HomePage() {
           />
         </div>
 
-        {/* Upcoming Features Button */}
+        {/* Actions & Upcoming Features */}
         <div
-          className="flex-1 flex items-end pb-8 animate-fadeIn"
+          className="flex-1 flex flex-col justify-end space-y-4 pb-8 animate-fadeIn"
           style={{ animationDelay: "0.2s" }}
         >
+          <Button
+            variant="primary"
+            size="lg"
+            onClick={() => router.push("/car-wash")}
+            className="w-full bg-yellow-500 hover:bg-yellow-600 text-navy-dark"
+          >
+            Request Car Wash
+          </Button>
+
           <Button
             variant="primary"
             size="lg"
