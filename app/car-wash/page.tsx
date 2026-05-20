@@ -99,7 +99,7 @@ export default function CarWashSelectionPage() {
             </svg>
           </div>
           <div>
-            <h2 className="font-semibold text-lg">Buick Envision</h2>
+            <h2 className="font-semibold text-lg">Toyota Corolla</h2>
             <p className="text-sm text-gray-300">License Plate: ABC 1234</p>
           </div>
         </div>

@@ -56,7 +56,7 @@ export default function MyCarPage() {
             <div className="flex justify-between items-center py-2 border-b border-gray-200">
               <span className="text-gray-600">Make & Model</span>
               <span className="text-navy-dark font-semibold">
-                Buick Envision
+                Toyota Corolla
               </span>
             </div>
 
